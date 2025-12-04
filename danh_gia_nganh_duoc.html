@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Test: Chuyên ngành Dược</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f7f7fb; color:#111; padding:20px; max-width:900px; margin:0 auto; }
+    h1 { text-align:center; color:#0b4f6c; }
+    .card { background:white; border-radius:12px; padding:18px; margin:12px 0; box-shadow:0 6px 18px rgba(12,24,40,0.08); }
+    .q { margin-bottom:12px; }
+    .options label { display:block; padding:8px; border-radius:8px; cursor:pointer; margin:6px 0; border:1px solid #eee; }
+    .options input { margin-right:8px; }
+    button { background:#0b7a99; color:white; padding:12px 18px; border:none; border-radius:10px; cursor:pointer; font-size:16px; }
+    button:hover { opacity:0.95; }
+    #result { margin-top:18px; padding:16px; border-radius:12px; background:#eef9ff; display:none; }
+    .small { font-size:13px; color:#555; }
+    footer { text-align:center; margin-top:20px; color:#777; font-size:13px; }
+  </style>
+</head>
+<body>
+  <h1>Test định hướng chuyên ngành Dược</h1>
+  <p class="small">Hãy trả lời 11 câu sau. Sau khi bấm <strong>Nộp bài</strong>, hệ thống sẽ hiện ngành phù hợp dựa trên số lần bạn chọn A, B, hoặc C. Nếu có kết quả bằng nhau, sẽ hiện cả 2 (hoặc cả 3) ngành.</p>
+
+  <form id="quizForm" class="card">
+
+    <div class="q">
+      <strong>1. Khi đứng trước một vấn đề mới, bạn thường bắt đầu bằng cách…</strong>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A. Tìm hiểu nguyên nhân sâu xa và các quy luật phía sau vấn đề.</label>
+        <label><input type="radio" name="q1" value="B"> B. Nghĩ xem có cách làm thực tế nào để thử nghiệm ngay không.</label>
+        <label><input type="radio" name="q1" value="C"> C. Tìm xem trong tự nhiên hoặc thực tế xung quanh có ví dụ tương tự không.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>2. Khi làm việc nhóm, bạn thường được giao…</strong>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A. Phân tích số liệu, lý giải hiện tượng, tìm ra mối liên hệ logic.</label>
+        <label><input type="radio" name="q2" value="B"> B. Thiết kế giải pháp, phân chia quy trình và kiểm tra kết quả.</label>
+        <label><input type="radio" name="q2" value="C"> C. Tìm tài liệu thực tế, nguồn nguyên liệu, dẫn chứng từ thiên nhiên.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>3. Trong học tập, điều gì làm bạn thấy hứng thú nhất?</strong>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A. Khám phá kiến thức mới và hiểu rõ bản chất.</label>
+        <label><input type="radio" name="q3" value="B"> B. Ứng dụng được kiến thức để tạo ra thứ gì đó vận hành được.</label>
+        <label><input type="radio" name="q3" value="C"> C. Tìm sự liên hệ giữa kiến thức và đời sống, thiên nhiên, con người.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>4. Khi phải chọn bài tập hoặc đề tài, bạn sẽ ưu tiên…</strong>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A. Đề tài đòi hỏi phân tích suy luận sâu, nhiều khái niệm.</label>
+        <label><input type="radio" name="q4" value="B"> B. Đề tài mang tính thực hành, có sản phẩm cụ thể.</label>
+        <label><input type="radio" name="q4" value="C"> C. Đề tài gần gũi với sinh học, tự nhiên, cây cỏ hoặc nguồn gốc thực phẩm.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>5. Bạn cảm thấy tự tin nhất khi…</strong>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A. Xử lý thông tin phức tạp, mô tả cơ chế, giải thích logic.</label>
+        <label><input type="radio" name="q5" value="B"> B. Thực hiện các bước thao tác, tối ưu quy trình, kiểm soát lỗi.</label>
+        <label><input type="radio" name="q5" value="C"> C. Quan sát đặc điểm tự nhiên, phân loại, so sánh, đánh giá mẫu.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>6. Điều gì khiến bạn cảm thấy phù hợp trong một nghề nghiệp?</strong>
+      <div class="options">
+        <label><input type="radio" name="q6" value="A"> A. Dùng kiến thức để tạo ra cái mới, mang tính nghiên cứu sâu.</label>
+        <label><input type="radio" name="q6" value="B"> B. Tạo ra sản phẩm hoàn chỉnh, an toàn và hữu ích với người dùng.</label>
+        <label><input type="radio" name="q6" value="C"> C. Tận dụng nguồn nguyên liệu tự nhiên và giá trị sinh học.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>7. Khi làm việc lâu dài, bạn muốn môi trường như thế nào?</strong>
+      <div class="options">
+        <label><input type="radio" name="q7" value="A"> A. Phòng thí nghiệm tập trung, ít nhiễu, nhiều thiết bị phân tích.</label>
+        <label><input type="radio" name="q7" value="B"> B. Không gian có quy trình rõ ràng, nhiều hoạt động thực nghiệm.</label>
+        <label><input type="radio" name="q7" value="C"> C. Môi trường có sự hiện diện của sinh học, cây cỏ, đề tài thực địa.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>8. Khi học môn mới, điều bạn chú ý trước tiên là…</strong>
+      <div class="options">
+        <label><input type="radio" name="q8" value="A"> A. Cơ sở lý thuyết, khung nguyên tắc, nền tảng khoa học.</label>
+        <label><input type="radio" name="q8" value="B"> B. Cách áp dụng vào thực tế, sản xuất hoặc thao tác.</label>
+        <label><input type="radio" name="q8" value="C"> C. Tác động của môn học đến sức khoẻ, thiên nhiên, nguồn gốc vật chất.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>9. Trong một buổi thực hành, điều khiến bạn thấy hứng khởi là…</strong>
+      <div class="options">
+        <label><input type="radio" name="q9" value="A"> A. Khám phá nguyên nhân tại sao kết quả lại như vậy.</label>
+        <label><input type="radio" name="q9" value="B"> B. Tạo ra sản phẩm cuối cùng đẹp – đúng – đạt chuẩn.</label>
+        <label><input type="radio" name="q9" value="C"> C. Xử lý mẫu thực vật, sinh học hoặc quan sát đặc tính tự nhiên.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>10. Khi giải quyết xung đột trong nhóm, bạn thường…</strong>
+      <div class="options">
+        <label><input type="radio" name="q10" value="A"> A. Phân tích lý do của từng bên và đưa ra điểm mấu chốt.</label>
+        <label><input type="radio" name="q10" value="B"> B. Tìm cách điều chỉnh quy trình để mọi người phối hợp mượt hơn.</label>
+        <label><input type="radio" name="q10" value="C"> C. Tìm tiếng nói chung dựa trên giá trị và nhu cầu tự nhiên của từng người.</label>
+      </div>
+    </div>
+    
+    <div class="q">
+      <strong>11. Bạn cảm thấy mình làm tốt nhất khi được…</strong>
+      <div class="options">
+        <label><input type="radio" name="q11" value="A"> A. Suy nghĩ độc lập và đào sâu một vấn đề nhỏ nhưng khó.</label>
+        <label><input type="radio" name="q11" value="B"> B. Vừa suy nghĩ vừa thao tác, thử nghiệm, điều chỉnh liên tục.</label>
+        <label><input type="radio" name="q11" value="C"> C. Khám phá, quan sát và ghi nhận sự đa dạng của tự nhiên hoặc thực tế.</label>
+      </div>
+    </div>
+    
+    <div style="text-align:center; margin-top:10px;">
+      <button type="button" id="submitBtn">Nộp bài</button>
+    </div>
+  </form>
+
+  <div id="result" class="card">
+    <h3>Kết quả của bạn:</h3>
+    <div id="outcomeText" style="font-weight:600; font-size:18px;"></div>
+    <p id="explain" class="small"></p>
+  </div>
+
+  <footer>Form do hệ thống tự tạo — Bạn có thể tải file HTML và chia sẻ dưới dạng link hoặc QR code.</footer>
+
+<script>
+document.getElementById('submitBtn').addEventListener('click', function(){
+  const totalQs = 11;
+  let scoreA=0, scoreB=0, scoreC=0;
+  for(let i=1;i<=totalQs;i++){
+    const els = document.getElementsByName('q'+i);
+    let chosen = null;
+    for(let j=0;j<els.length;j++){
+      if(els[j].checked) { chosen = els[j].value; break; }
+    }
+    if(chosen==='A') scoreA++;
+    else if(chosen==='B') scoreB++;
+    else if(chosen==='C') scoreC++;
+  }
+
+  // Build outcome logic
+  let outcomes = [];
+  if(scoreA===0 && scoreB===0 && scoreC===0){
+    alert('Bạn chưa chọn câu nào. Vui lòng trả lời ít nhất 1 câu.');
+    return;
+  }
+
+  // Determine highest score
+  const maxScore = Math.max(scoreA, scoreB, scoreC);
+  if(scoreA===maxScore) outcomes.push('Hóa dược');
+  if(scoreB===maxScore) outcomes.push('Bào chế');
+  if(scoreC===maxScore) outcomes.push('Dược liệu');
+
+  // Display
+  const outDiv = document.getElementById('outcomeText');
+  const explain = document.getElementById('explain');
+  outDiv.textContent = outcomes.join(' + ');
+  let details = `Số chọn: A=${scoreA}, B=${scoreB}, C=${scoreC}.\n`;
+  if(outcomes.length===1){
+    if(outcomes[0]==='Hóa dược') details += 'Thiên hướng phân tích – logic – nghiên cứu bản chất.';
+    else if(outcomes[0]==='Bào chế') details += 'Thiên hướng thực hành – công nghệ – sản phẩm.';
+    else if(outcomes[0]==='Dược liệu') details += 'Thiên hướng sinh học – tự nhiên – trải nghiệm thực địa.';
+  } else if(outcomes.length===2){
+    details += 'Bạn có xu hướng nằm giữa hai chuyên ngành trên.';
+  } else {
+    details += 'Bạn có nhiều sở thích đa dạng, phù hợp cả 3 chuyên ngành.';
+  }
+  explain.textContent = details;
+  document.getElementById('result').style.display = 'block';
+  // scroll to result
+  document.getElementById('result').scrollIntoView({behavior:'smooth'});
+});
+</script>
+
+</body>
+</html>
